@@ -35,7 +35,7 @@ public class userpanel extends AppCompatActivity {
 
                             case R.id.radioButton6:
 
-                                Intent inten = new Intent(userpanel.this, searchbus.class);
+                                Intent inten = new Intent(userpanel.this, MainActivity4.class);
                                 startActivity(inten);
                                 break;
 

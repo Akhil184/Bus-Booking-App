@@ -4,7 +4,7 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-tools:context=".login"
+tools:context=".MainActivity2"
 tools:ignore="VectorDrawableCompat">
 
 <androidx.appcompat.widget.Toolbar
@@ -14,39 +14,40 @@ tools:ignore="VectorDrawableCompat">
     android:background="@drawable/header_login"
     android:elevation="5dp" />
 
-<TextView
-    android:id="@+id/tvDesc"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginLeft="30dp"
-    android:layout_marginTop="40dp"
-    android:elevation="5dp"
-    android:text="Welcome to apps"
-    android:textColor="@color/white"
-    android:textSize="17sp" />
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:elevation="5dp"
+        android:text="Welcome to apps"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold|italic" />
 
-<TextView
-    android:id="@+id/tvLogin"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_below="@+id/tvDesc"
-    android:transitionName="tvLogin"
-    android:layout_alignLeft="@+id/tvDesc"
-    android:elevation="5dp"
-    android:text="Login"
-    android:textColor="@color/white"
-    android:textSize="30sp"
-    android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDesc"
+        android:layout_alignLeft="@+id/tvDesc"
+        android:elevation="5dp"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        android:transitionName="tvLogin" />
 
-<ImageView
-    android:id="@+id/circle1"
-    android:layout_width="134dp"
-    android:layout_height="134dp"
-    android:layout_below="@+id/bgHeader"
-    android:layout_alignParentRight="true"
-    android:layout_marginTop="-80dp"
-    android:layout_marginRight="-100dp"
-    android:src="@drawable/circletransparant" />
+    <ImageView
+        android:id="@+id/circle1"
+        android:layout_width="134dp"
+        android:layout_height="134dp"
+        android:layout_below="@+id/bgHeader"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-80dp"
+        android:layout_marginRight="-100dp"
+        android:src="@drawable/circletransparant" />
 
 <ImageView
     android:id="@+id/circle2"
@@ -106,33 +107,47 @@ tools:ignore="VectorDrawableCompat">
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
-                    android:text="name"
+                    android:text="Name"
                     android:textColor="@color/colorPurple"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
+                    android:textSize="24sp"
+                    android:textStyle="bold|italic" />
 
                 <EditText
+                    android:id="@+id/edit11"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="50dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:inputType="text" />
+                    android:background="@drawable/gg"
+                    android:drawableLeft="@drawable/ic_baseline_person_24"
+                    android:drawablePadding="20dp"
+                    android:hint="Name"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textColor="@color/teal_700" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
-                    android:text="mobile no"
+                    android:text="Mobile No"
                     android:textColor="@color/colorPurple"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
+                    android:textSize="24sp"
+                    android:textStyle="bold|italic" />
 
                 <EditText
+                    android:id="@+id/edit12"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="50dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:inputType="textPassword" />
+                    android:background="@drawable/gg"
+                    android:drawableLeft="@drawable/ic_baseline_phone_24"
+                    android:drawablePadding="10dp"
+                    android:hint="mobile no"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textColor="@color/teal_700" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -154,7 +169,9 @@ tools:ignore="VectorDrawableCompat">
                 android:background="@drawable/bg_ui"
                 android:text="Login"
                 android:textAllCaps="false"
-                android:textColor="@color/white" />
+                android:textColor="@color/teal_200"
+                android:textSize="24sp"
+                android:textStyle="bold|italic" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -183,9 +200,10 @@ tools:ignore="VectorDrawableCompat">
             android:layout_marginTop="10dp"
             android:elevation="5dp"
             android:text="Forgot your password?"
-            android:textSize="14sp" />
+            android:textSize="24sp" />
 
         <Button
+            android:id="@+id/face"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tvForgot"
@@ -199,7 +217,10 @@ tools:ignore="VectorDrawableCompat">
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
             android:text="LOGIN WITH FACEBOOK"
-            android:textColor="@color/colorPurple" />
+            android:textColor="@color/teal_200"
+            android:textStyle="bold|italic" />
+
+
     </RelativeLayout>
 </ScrollView>
 

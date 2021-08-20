@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1023537453240",
+    "firebase_url": "https://zwert-b1379-default-rtdb.firebaseio.com",
+    "project_id": "zwert-b1379",
+    "storage_bucket": "zwert-b1379.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1023537453240:android:af9e0f1a39fe98c637fc4d",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1023537453240-2ht5m5ch4sdgkrip4mq59moe88c4b2gm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOYNeLYP5yHoCT3qOjPunPOFQaQqBKIgk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1023537453240-2ht5m5ch4sdgkrip4mq59moe88c4b2gm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

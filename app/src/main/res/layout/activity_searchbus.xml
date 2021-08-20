@@ -38,7 +38,7 @@ tools:context=".searchbus">
 
 </com.google.android.material.appbar.AppBarLayout>
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginTop="-16dp"
@@ -175,7 +175,7 @@ tools:context=".searchbus">
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="16dp"
-                android:background="@drawable/buttonshape"
+                android:background="@drawable/gg"
                 android:fontFamily="@font/calibri"
                 android:text="Search Buses"
                 android:textAllCaps="false"

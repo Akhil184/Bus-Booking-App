@@ -14,4 +14,6 @@
     <string name="confirm_password">Confirm Password</string>
     <string name="already_registered">Already Registered?</string>
     <string name="welcome_user">Welcome User</string>
+    <string name="dialog_message">Welcome to Alert Dialog</string>
+    <string name="dialog_title">Javatpoint Alert Dialog</string>
 </resources>

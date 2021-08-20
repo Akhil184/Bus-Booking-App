@@ -14,18 +14,18 @@ android:background="@drawable/header_register"
 android:theme="@style/ToolbarTheme"
 android:elevation="5dp" />
 
-<TextView
-android:id="@+id/tvSignUp"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:layout_centerHorizontal="true"
-android:layout_marginTop="40dp"
-android:elevation="10dp"
-android:transitionName="tvLogin"
-android:text="Sign up"
-android:textColor="@color/white"
-android:textSize="20sp"
-android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tvSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:elevation="10dp"
+        android:text="Sign up"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        android:transitionName="tvLogin" />
 
 <ImageView
 android:id="@+id/circle1"
@@ -66,8 +66,8 @@ android:layout_margin="20dp">
         app:cardElevation="4dp">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="361dp"
+            android:layout_height="match_parent"
             android:orientation="vertical"
             android:paddingBottom="50dp">
 
@@ -77,15 +77,22 @@ android:layout_margin="20dp">
                 android:layout_margin="10dp"
                 android:text="Email"
                 android:textColor="@color/colorPurple"
-                android:textSize="14sp"
-                android:textStyle="bold" />
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
 
             <EditText
-                android:layout_width="355dp"
-                android:layout_height="34dp"
+                android:id="@+id/edit1"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:inputType="textEmailAddress" />
+                android:background="@drawable/gg"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:drawablePadding="10dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textColor="@color/teal_700" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -93,15 +100,22 @@ android:layout_margin="20dp">
                 android:layout_margin="10dp"
                 android:text="name"
                 android:textColor="@color/colorPurple"
-                android:textSize="14sp"
-                android:textStyle="bold" />
+                android:textSize="20sp"
+                android:textStyle="normal|bold|italic" />
 
             <EditText
-                android:layout_width="349dp"
-                android:layout_height="30dp"
+                android:id="@+id/edit2"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:inputType="text" />
+                android:background="@drawable/gg"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawablePadding="10dp"
+                android:hint="Name"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@color/teal_700" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -109,81 +123,126 @@ android:layout_margin="20dp">
                 android:layout_margin="10dp"
                 android:text="Adhar card"
                 android:textColor="@color/colorPurple"
-                android:textSize="14sp"
-                android:textStyle="bold" />
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
 
             <EditText
-                android:layout_width="344dp"
-                android:layout_height="28dp"
+                android:id="@+id/edit3"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:inputType="number" />
+                android:background="@drawable/gg"
+                android:drawableLeft="@drawable/ic_baseline_note_24"
+                android:drawablePadding="10dp"
+                android:hint="Aadhar card No"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textColor="@color/teal_700" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:text="phone no"
+                android:text="Mobile no"
                 android:textColor="@color/colorPurple"
-                android:textSize="14sp"
-                android:textStyle="bold" />
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
 
             <EditText
-                android:layout_width="349dp"
-                android:layout_height="33dp"
+                android:id="@+id/edit4"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:inputType="number" />
+                android:background="@drawable/gg"
+                android:drawableLeft="@drawable/ic_baseline_phone_24"
+                android:drawablePadding="10dp"
+                android:hint="Mobile No"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textColor="@color/teal_700" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:text="Address"
                 android:textColor="@color/colorPurple"
-                android:textSize="14sp"
-                android:textStyle="bold" />
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
 
             <EditText
-                android:layout_width="353dp"
-                android:layout_height="32dp"
+                android:id="@+id/edit5"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:inputType="text" />
+                android:background="@drawable/gg"
+                android:drawableLeft="@drawable/ic_baseline_location_on_24"
+                android:drawablePadding="10dp"
+                android:hint="Address"
+                android:inputType="text"
+                android:padding="10dp" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:text="DOB"
                 android:textColor="@color/colorPurple"
-                android:textSize="14sp"
-                android:textStyle="bold" />
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
 
             <EditText
-                android:layout_width="353dp"
-                android:layout_height="32dp"
+                android:id="@+id/edit6"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:inputType="date" />
+                android:background="@drawable/gg"
+                android:drawableLeft="@drawable/ic_baseline_date_range_24"
+                android:drawablePadding="10dp"
+                android:hint="DOB"
+                android:inputType="date"
+                android:padding="10dp"
+                android:textColor="@color/teal_700" />
+            <RadioGroup
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:checked="true">
 
-            <RadioButton
-                android:id="@+id/radioButton"
-                android:layout_width="361dp"
-                android:layout_height="37dp"
-                android:text="Male"
-                android:textColor="@color/colorPurple"/>
 
-            <RadioButton
-                android:id="@+id/radioButton3"
-                android:layout_width="359dp"
-                android:layout_height="31dp"
-                android:text="Female"
-                android:textColor="@color/colorPurple"/>
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="350dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/gg"
+                    android:text="Male"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/colorPurple"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="350dp"
+                    android:layout_height="31dp"
+                    android:background="@drawable/gg"
+                    android:text="Female"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/colorPurple"
+                    android:textSize="20sp" />
+            </RadioGroup>
 
             <Button
-                android:layout_width="match_parent"
+                android:id="@+id/button56"
+                android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_ui"
                 android:text="Sign up"
+                android:layout_marginTop="20dp"
                 android:textAllCaps="false"
                 android:textColor="@color/white" />
         </LinearLayout>

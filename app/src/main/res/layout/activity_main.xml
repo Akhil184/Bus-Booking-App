@@ -6,13 +6,14 @@
         android:layout_height="match_parent"
         tools:context=".signupc"
     tools:ignore="HardcodedText">
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/bgHeader"
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:background="@drawable/header_register"
-        android:theme="@style/ToolbarTheme"
-        android:elevation="5dp" />
+        android:elevation="5dp"
+        android:theme="@style/ToolbarTheme" />
 
     <TextView
         android:id="@+id/tvSignUp"
@@ -21,11 +22,11 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
         android:elevation="10dp"
-        android:transitionName="tvLogin"
         android:text="welcome to bus booking app"
-        android:textColor="@color/white"
+        android:textColor="@color/colorBrown"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textStyle="bold|italic"
+        android:transitionName="tvLogin" />
 
     <ImageView
         android:id="@+id/circle1"
@@ -71,11 +72,10 @@
                     android:orientation="vertical"
                     android:paddingBottom="50dp">
 
-<ImageView
-    android:layout_width="match_parent"
-    android:layout_height="300dp"
-    android:src="@drawable/bus_booking_logo"
-    />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:src="@drawable/bus_booking_logo" />
 
                     <Button
                         android:id="@+id/button0"
@@ -84,7 +84,9 @@
                         android:background="@drawable/bg_ui"
                         android:text="Passenger login"
                         android:textAllCaps="false"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/teal_200"
+                        android:textSize="24sp"
+                        android:textStyle="bold|italic" />
 
                     <Button
                         android:id="@+id/button15"
@@ -94,7 +96,9 @@
                         android:background="@drawable/bg_ui"
                         android:text="Conductor login"
                         android:textAllCaps="false"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/teal_200"
+                        android:textSize="24sp"
+                        android:textStyle="bold|italic" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -112,6 +116,10 @@
             </RelativeLayout>
         </RelativeLayout>
     </ScrollView>
+
+
+
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/add_fab"
         android:layout_width="wrap_content"
@@ -119,70 +127,24 @@
         android:layout_gravity="end"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:src="@drawable/sos"
-        app:fabSize="normal"
+        android:src="@drawable/sos1"
+        app:fabCustomSize="50dp"
+        app:fabSize="auto"
+        app:maxImageSize="70dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <!--Floating action button for add alarm-->
     <!--Make sure that you are constraining this
         button to the parent button-->
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/add_alarm_fab"
-        android:layout_width="73dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        app:fabSize="normal"
-        app:layout_constraintBottom_toTopOf="@+id/add_fab"
-        app:layout_constraintEnd_toEndOf="@+id/add_fab"
-        app:layout_constraintStart_toStartOf="@+id/add_fab"
-        app:srcCompat="@drawable/sos" />
-
-    <!--Action name text for the add alarm button-->
-    <!--Make sure that you are constraining this Text to
-        the add Alarm FAB button-->
-    <TextView
-        android:id="@+id/add_alarm_action_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:text="Add Alarm"
-        app:layout_constraintBottom_toBottomOf="@+id/add_alarm_fab"
-        app:layout_constraintEnd_toStartOf="@+id/add_alarm_fab"
-        app:layout_constraintTop_toTopOf="@+id/add_alarm_fab" />
-
-    <!--Floating action button for add person-->
-    <!--Make sure that you are constraining this
-        button to the add Alarm FAB button-->
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/add_person_fab"
-        android:layout_width="0dp"
-        android:layout_height="70dp"
-        android:layout_marginBottom="24dp"
-        app:fabSize="normal"
-        app:layout_constraintBottom_toTopOf="@+id/add_alarm_fab"
-        app:layout_constraintEnd_toEndOf="@+id/add_alarm_fab"
-        app:layout_constraintStart_toStartOf="@+id/add_alarm_fab"
-        app:srcCompat="@drawable/sos" />
-
-    <!--Action name text for the add person button-->
-    <!--Make sure that you are constraining this Text
-        to the add Person FAB button-->
-    <TextView
-        android:id="@+id/add_person_action_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:text="Add Person"
-        app:layout_constraintBottom_toBottomOf="@+id/add_person_fab"
-        app:layout_constraintEnd_toStartOf="@+id/add_person_fab"
-        app:layout_constraintTop_toTopOf="@+id/add_person_fab" />
-
-
-
-
 
 </RelativeLayout>
+
+
+
+
+
+
 
 
 
